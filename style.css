@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+.main_continer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.95);
+}
+.main_continer .navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 10%;
+    top: 2%;
+}
+.main_continer .navbar .logo{
+    color: #ccc;
+    font-size: 1.2rem;
+}
+.main_continer .navbar nav{
+    margin-left: 10rem;
+}
+.main_continer .navbar nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 1rem;
+}
+.main_image .hero_content{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_image .hero_content .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border-radius: 1rem;
+}
+.main_image .hero_content .inputs input{
+    all: unset;
+    padding: 0.2rem 1rem;
+}
+.main_image .hero_content .inputs input::placeholder{
+    color: white;
+}
+.main_image .hero_content .inputs button{
+    all: unset;
+    background-color: #9d9d9d;
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+.main_image .hero_content h1, p{
+    margin: 0.3rem 0;
+    color: #ccc;
+}
+.main_image .hero_content .book{
+    all: unset;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s linear;
+
+    &:hover{
+        background-color: #9d9d9d;
+    }
+}
+.main_image{
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.385);
+    margin: 0 auto;
+    position: relative;
+}
+.main_image .right , .left{
+    all: unset;
+    position: absolute;
+    top: 50%;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s linear;
+
+    &:hover{
+        background-color: #9d9d9d;
+    }
+}
+.main_image .right{
+    right: 10%;
+}
+.main_image .left{
+    left: 10%;
+}
+.main_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s ease-in-out;
+}
+.sub_images{
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.8s ease-in-out;
+}
+.sub_images img{
+    width: 15vw;
+    height: 25vh;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 4px 1px #ffffff;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
